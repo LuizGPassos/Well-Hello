@@ -76,8 +76,5 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
 - **Voice Settings:**
   Adjust the parameters in `tts_response.py` to customize the voice settings (e.g., stability, similarity_boost).
 
-## Contributing
-We welcome contributions! Please fork the repository and submit a pull request with your changes.
-
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
