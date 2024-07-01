@@ -11,6 +11,7 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
+- [Versioning](#versioning)
 - [License](#license)
 
 ## Features
@@ -31,7 +32,7 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/well-hello.git
+   git clone https://github.com/LuizGPassos/well-hello.git
    cd well-hello
    ```
 
@@ -74,6 +75,21 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
   
 - **Voice Settings:**
   Adjust the parameters in `tts_response.py` to customize the voice settings (e.g., stability, similarity_boost).
+
+## Versioning
+### Version 1.0
+- Initial release with the following features:
+  - Voice Recognition
+  - Text-to-Speech
+  - Interactive Conversations
+  - Customizable AI Behavior
+  - Multi-Language Support
+
+### Version 1.1
+- Added image recognition functionality.
+  - The AI can recognize images if the user says "Capture this." at the beginning of the audio recording.
+  - Utilizes OpenAI's image processing capabilities.
+  - Takes a screenshot of the screen and sends it along with the voice prompt to the AI for a more detailed response based on the screenshot.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
