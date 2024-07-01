@@ -14,7 +14,7 @@ AI_ROLE = """You are a helpful assistant."""
 def AiTalk():
     user_prompt = SpeechToText()
 
-    if user_prompt.startswith("Capture this."):
+    if user_prompt.startswith("Capture this"):
 
         image = ShotAndSave()
         print(f'User Prompt: {user_prompt}')
