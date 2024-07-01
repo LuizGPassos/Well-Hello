@@ -11,7 +11,6 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
