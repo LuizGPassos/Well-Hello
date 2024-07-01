@@ -29,6 +29,7 @@ def AiTalk():
         )
         ai_response = response.choices[0].message.content
         print(f'\n Ai Response: {ai_response}')
+        os.remove("screenshot.jpeg")
         
     else:
         print(f'User Prompt: {user_prompt}')
