@@ -12,7 +12,7 @@ client = ElevenLabs(
     api_key=ELEVENLABS_API_KEY,
 )
 
-VOICE_ID = "ZfQsdQJT1m3TzRtkXq7g"
+VOICE_ID = "VU3GQXOzoenLZNZ84sCy"
 
 def text_to_speech_file(text: str) -> str:
     # Calling the text_to_speech conversion API with detailed parameters
