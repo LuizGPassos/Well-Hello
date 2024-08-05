@@ -87,9 +87,15 @@ Welcome to **Well, Hello!** – a Python-based AI project that combines OpenAI's
 
 ### Version 1.1
 - Added image recognition functionality.
-  - The AI can recognize images if the user says "Capture this." at the beginning of the audio recording.
+  - The AI can recognize images if the user says "what do you see?" at the ending of the audio recording.
   - Utilizes OpenAI's image processing capabilities.
   - Takes a screenshot of the screen and sends it along with the voice prompt to the AI for a more detailed response based on the screenshot.
+
+### Version 1.2
+- Added Conversation Memory with JSON.
+  - Implemented a session-based memory feature using JSON files to store the conversation history.
+  - The stored history is used to provide context for the AI's responses, enabling it to refer to previous interactions within the same session.
+  - The history file is deleted at the end of the session to reset the memory for the next session.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
