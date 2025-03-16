@@ -1,10 +1,15 @@
-from openai import OpenAI
+import openai
 import pyaudio
 import wave
 import keyboard
 import os
+from dotenv import load_dotenv
 
-client = OpenAI()
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+openai.api_key = OPENAI_API_KEY
 
 audio = pyaudio.PyAudio()
 
@@ -43,7 +48,7 @@ def SpeechToText():
     RecordAudio()
 
     audio_file = open("Speech.wav", "rb")
-    transcription = client.audio.transcriptions.create(
+    transcription = openai.audio.transcriptions.create(
         model="whisper-1",
         file=audio_file
     )

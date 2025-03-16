@@ -9,11 +9,12 @@ import time
 load_dotenv()
 
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
+
 client = ElevenLabs(
     api_key=ELEVENLABS_API_KEY,
 )
 
-VOICE_ID = "VU3GQXOzoenLZNZ84sCy"
+VOICE_ID = "DUnzBkwtjRWXPr6wRbmL"
 
 def text_to_speech_file(text: str) -> str:
     # Calling the text_to_speech conversion API with detailed parameters

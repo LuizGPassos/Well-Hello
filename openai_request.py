@@ -1,12 +1,18 @@
-from openai import OpenAI
+import openai
 from speech_to_text import SpeechToText
 from tts_response import text_to_speech_file
 from screenshot import ShotAndSave
 import pygame
 import os
 import json
+from dotenv import load_dotenv
 
-client = OpenAI()
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+openai.api_key = OPENAI_API_KEY
+
 AI_ROLE = """You're an helpful assistant."""
 
 def load_history():
@@ -30,7 +36,7 @@ def AiTalk():
     if "what do you see?" in user_prompt.lower():
         image = ShotAndSave()
         print(f'Screen captured.')
-        response = client.chat.completions.create(
+        response = openai.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": AI_ROLE},
@@ -41,7 +47,7 @@ def AiTalk():
         )
         os.remove("screenshot.jpeg") 
     else:
-        response = client.chat.completions.create(
+        response = openai.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": AI_ROLE},
